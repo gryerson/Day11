@@ -37,7 +37,7 @@ function discPercCalc (listPrice, customerType)
 	if (customerType == 'R')
 	{
 		if (listPrice < 100) discountPercent = 0;
-		else if (listPrice >= 100 && listPrice < 250) discoutnPercent = 10;
+		else if (listPrice >= 100 && listPrice < 250) discountPercent = 10;
 		else if (listPrice >= 250) discountPercent = 25;
 	} 
 	else if (customerType == 'C')
@@ -63,7 +63,7 @@ function discAmountCalc (listPrice, discountPercent)
 function discPriceCalc (listPrice, discount)
 {
    //alert('inside discPriceCalc');
-   var discPrice = listPrice - discountPercent; // wrong
+   var discPrice = listPrice - discount;
    //alert('discPrice = ' + discPrice);
    return discPrice;
 }
