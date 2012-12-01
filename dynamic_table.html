@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+   <meta charset="utf-8" />
+   <title>Homer’s Online Music Shop</title>
+   <link rel="shortcut icon" href="images/homer.ico" />
+   <link rel="stylesheet" href="css/main.css" />
+   <link rel="stylesheet" href="css/nav.css" />
+   <script src="js/dynamic_table.js"></script>
+   <style>
+      /* Form Style */
+      form {
+         padding: 1em;
+      }
+      label {
+         width: 5em;
+         float: left;
+      }
+      input {
+         border: 1px solid black;	
+         float: left;
+         width: 12em;
+         margin-bottom: .5em;
+      }
+      br {
+         clear: left;
+      }
+
+      /* Table Style */
+      table {
+         border-collapse: collapse;
+         table-layout: fixed;
+      }
+      .narrow {
+         display: table-cell;
+         width: 4em;
+      }
+      .wide {
+         display: table-cell;
+         width: 12em;
+      }
+      caption {
+         text-align: left;
+         font-size: 150%;
+         font-weight: bold;
+         margin: .5em 0;
+      }
+      th  {
+         text-align: left;
+         text-decoration: underline;
+      }
+   </style>
+
+</head>
+
+<body>
+   <header>
+      <img src="images/Homer_Rock_and_Roll.jpg" alt="Homer" width="100" height="100" />
+      <hgroup>
+         <h1>Homer's Music Store</h1>
+         <h2>Rock On!</h2>
+      </hgroup>
+      <nav>
+         <ul id="main">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="multi_column.html">Layout</a>
+               <ul>
+                  <li><a href="two_column_left.html">2 Column Float Left</a></li>
+                  <li><a href="two_column_right.html">2 Column Float Right</a></li>
+                  <li><a href="three_column.html">3 Column Float</a></li>
+               </ul>
+            </li>
+            <li><a href="table.html">Tables</a>
+               <ul>
+                  <li><a href="dynamic_table.html">Dynamic</a></li>
+                  <li><a href="web_sql.html">Database</a></li>
+               </ul>
+            </li>
+            <li><a href="slideshow.html">Slide Show</a>
+               <ul>
+                  <li><a href="accordion.html">Accordion</a></li>
+               </ul>
+            </li>
+            <li><a href="video.html">Multimedia</a>
+               <ul>
+                  <li><a href="audio.html">Audio</a></li>
+               </ul>
+            </li>
+            <li><a href="email_form.html">Forms</a>
+               <ul>
+                  <li><a href="product_discount.html">Product Discount</a></li>
+                  <li><a href="invoice_total.html">Invoice total</a></li>
+               </ul>
+            </li>
+            <li><a href="product.php">Products</a></li>
+            <li><a href="images.html">Graphics</a>
+               <ul>
+                  <li><a href="rollover.html">Rollover</a></li>
+                  <li><a href="svg.html">SVG</a></li>
+                  <li><a href="canvas.html">Canvas</a></li>
+                  <li><a href="geolocation.html">Geolocation</a></li>
+                  <li><a href="cube.html">Animation</a></li>
+               </ul>
+            </li>
+         </ul>
+      </nav>
+   </header>
+
+   <section id="container">
+      <header id="top">
+         <h1>Everything Is On Sale for Halloween</h1>
+      </header>
+
+      <!-- Content Starts Here -->
+      <h2>A Better Address Book - Please enter the following information:</h2>
+      <fieldset>
+         <legend>Contact Information</legend>
+         <form>
+            <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="Enter your name"/> <br />
+            <label for="email">Email: </label>
+            <input type="text" id="email" placeholder="Enter your email address" /> <br />
+            <label for="phone">Cell: </label>
+            <input type="text" id="phone" placeholder="Enter your telephone number" /><br />
+            <button type="button" onclick="addContact();">Add</button>
+            <button type="reset">Reset</button>
+         </form>
+      </fieldset>
+
+      <table id="contacts">
+         <caption>Contact List</caption>
+         <thead>
+            <tr>
+               <th class="narrow">Number</th>
+               <th class="wide">Name</th>
+               <th class="wide">Email</th>
+               <th class="wide">Cell</th>
+               <th class="narrow">&nbsp;</th>
+            </tr>
+         </thead>
+         <tbody></tbody>
+      </table>
+      <!-- Content Ends Here-->
+
+   </section>
+
+   <footer>
+      <p>&copy; 2012 Homer J. Simpson</p>
+   </footer>
+</body>
+</html>

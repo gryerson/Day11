@@ -1,0 +1,45 @@
+/* Set nav bar background, border, and align text */
+
+nav {
+	background-color: yellowGreen;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	text-align: center;
+}
+
+/* Remove margins and padding */
+
+nav, #main ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* Style fonts and remove underline */
+
+nav a {
+	padding: 10px;
+	font-size: 110%;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+
+/* Eliminate list bullets */
+
+nav ul {
+	list-style-type: none;
+}
+
+/* Set hyperlinks as inline elements */
+
+nav li {
+	display: inline-block;
+}
+
+/* Add pseudo class states */
+
+#main li:hover a {
+	color: blue;
+	background-color: ghostWhite;
+}
+
